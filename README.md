@@ -16,7 +16,7 @@ You can add a zip code to your project if you wish (not a strict requirement).
 
 Once the project is complete, commit the project to github and submit the github repository link to the assignment.
 
-## links
+## Links
 - [Open Weather API](https://openweathermap.org/api)
 - [Open Weather API Documentation](https://openweathermap.org/current)
 - [Open Weather API - Get Weather by City Name](https://openweathermap.org/current#name)
@@ -32,4 +32,6 @@ Once the project is complete, commit the project to github and submit the github
 - [Open Weather API - JSON Weather Data Example](https://openweathermap.org/current#example)
 - [Open Weather API - JSON Weather Data Example 2](https://openweathermap.org/current#example2)
 
-!image[example]([./assets/images/weather-app.png](https://drive.google.com/file/d/10l9bbf9h77-hn247nYCQlhchODvJk1xm/view))
+- [W3Schools - How To Create a Temperature Converter](https://www.w3schools.com/howto/howto_js_temperature_converter.asp)
+
+![example](https://lh3.googleusercontent.com/drive-storage/AJQWtBNwi70Lnt8PgSPqsHRUSjTZ0n-gyOeWuyr3VeSsd_0QC1PgdUwBs3Z9dL-uZINwQLboham1GBRqzAm1aYWXQ0EQBK6iliXxBHjJYG49SgCL_cQ=w1905-h953)
