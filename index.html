@@ -3,11 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>whats the weather .now</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #e9ecef;
+        font-family: Arial, sans-serif;
+      }
+      .my-container {
+        border: 1px solid black;
+        padding: 25px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      .btn-primary {
+        background-color: #84C3BE;
+        border: #3E5F8A;
+      }
+      .btn-secondary {
+        background-color: #6A5D4D;
+        border: #826C34;
+      }
+      .btn-primary:hover {
+        background-color: #969992;
+      }
+      .btn-secondary:hover {
+        background-color: #0A0A0A;
+      }
+      header {
+        background-color: #0d6efd;
+        color: white;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      em {
+        font-size: .8em;
+        opacity: .8;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <h1 class="container">whats the weather <em>.now</em></h1>
+    </header>
+    <!-- main-->
+    <div class="container">
+    <div class="row">
+      <!-- form -->
+      <div class="col-12 col-lg-4">
+        <div class="my-container">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input type="text" class="form-control" id="locationInput" placeholder="Denver or 80014">
+            <div  class="form-text">Possible formats: City Name or Zip Code</div>
+          </div>
+          <button type="button" class="btn btn-primary">Submit</button>
+          or
+          <button type="button" class="btn btn-secondary">Use Current Location</button>
+        </form>
+        </div>
+      </div>
+      <!-- end form -->
+      <!-- display -->
+      <div class="col-12 col-lg-8 ">
+        <div class="my-container">
+          <h1>Weather for <em>Denver</em></h1>
+          <h5>lat: <em>45.133</em> lon: <em>7.367</em></h45>
+          <h4>Description: ICON <em>moderate rain</em> ICON </h4>
+          <h4>Temp: <em>98 Degrees F</em> </h4>
+          <h4>High: <em>105 Degrees F</em></h4>
+          <h4>Low: <em>75 Degrees F</em> </h4>
+          <h4>Humidity: <em>45%</em> </h4>
+          <h4>Wind Speed: <em>5 mph</em> </h4>
+          <h4>Cloud Cover: <em>20%</em> </h4>
+          <h4>Pressure: <em>1015 mb</em> </h4>
+          <h4>Sunrise: <em>6:45 AM</em> </h4>
+          <h4>Sunset: <em>7:30 PM</em> </h4>
+        </div>
+      </div>
+      <!-- end display -->
+    </div>
+    </div>
+
+
+    <!-- navigation bar end -->
+
+    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
   </body>
