@@ -18,20 +18,27 @@
         background-color: white;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
       }
+      .form-switch {
+        margin: 10px 0px;
+      }
   
       .btn-primary {
         background-color: #84C3BE;
-        border: #3E5F8A;
+        border-color: #3E5F8A;
       }
       .btn-secondary {
         background-color: #6A5D4D;
-        border: #826C34;
+        border-color: #826C34;
       }
       .btn-primary:hover {
         background-color: #969992;
+        border-color: #EDFF21;
+        transform: scale(1.05);
       }
       .btn-secondary:hover {
         background-color: #0A0A0A;
+        border-color: #C93C20;
+        transform: scale(1.05);
       }
       header {
         background-color: #0d6efd;
@@ -57,34 +64,41 @@
       <div class="col-12 col-lg-4">
         <div class="my-container">
         <form>
+
           <div class="mb-3">
             <label class="form-label">Location</label>
-            <input type="text" class="form-control" id="locationInput" placeholder="Denver or 80014">
+            <input type="text" class="form-control" id="location-input" placeholder="Denver or 80014">
             <div  class="form-text">Possible formats: City Name or Zip Code</div>
+          </div> 
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="temp-format-switch">
+            <label class="form-check-label">Temperature Format: <em id="temp-format-text">Celsius</em></label>
           </div>
-          <button type="button" class="btn btn-primary">Submit</button>
+
+          <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
           or
-          <button type="button" class="btn btn-secondary">Use Current Location</button>
+          <button type="button" class="btn btn-secondary" id="current-location-btn">Use Current Location</button>
+
         </form>
         </div>
       </div>
       <!-- end form -->
       <!-- display -->
       <div class="col-12 col-lg-8 ">
-        <div class="my-container">
-          <h1>Weather for <em>Denver</em></h1>
-          <h5>lat: <em>45.133</em> lon: <em>7.367</em></h45>
-          <h4>Description: ICON <em>moderate rain</em> ICON </h4>
-          <h4>Temp: <em>98 Degrees F</em> </h4>
-          <h4>High: <em>105 Degrees F</em></h4>
-          <h4>Low: <em>75 Degrees F</em> </h4>
-          <h4>Humidity: <em>45%</em> </h4>
-          <h4>Wind Speed: <em>5 mph</em> </h4>
-          <h4>Cloud Cover: <em>20%</em> </h4>
-          <h4>Pressure: <em>1015 mb</em> </h4>
-          <h4>Sunrise: <em>6:45 AM</em> </h4>
-          <h4>Sunset: <em>7:30 PM</em> </h4>
-        </div>
+        <div class="my-container" id="weather-display">
+        <h1>Weather for <em>Denver</em></h1>
+        <h6>latitude: <em>39.7392</em>, longitude: <em>-104.9847</em></h6>
+        <h4><img src="http://openweathermap.org/img/wn/04n.png" alt="broken clouds">  broken clouds <img src="http://openweathermap.org/img/wn/04n.png" alt="broken clouds"></h4>
+        <h4>Temp: <em>18.83 °C</em></h4>
+        <h4>High: <em>19.92 °C</em></h4>
+        <h4>Low: <em>17.07 °C</em></h4>
+        <h4>Humidity: <em>55%</em></h4>
+        <h4>Wind Speed: <em>0.45 m/s</em></h4>
+        <h4>Cloud Coverage: <em>74%</em></h4>
+        <h4>Pressure: <em>1017 hPa</em></h4>
+        <h4>Visibility: <em>10000 meters</em></h4>
+    </div>
       </div>
       <!-- end display -->
     </div>
